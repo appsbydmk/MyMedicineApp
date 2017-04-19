@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.future.mymedicineapp.HelpActivity"
+    android:background="#3399FF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/ht_profile"
+                android:id="@+id/ht_profile"
+                android:gravity="center"
+                android:padding="5dp"
+                android:autoText="false"
+                android:background="@drawable/help"
+                android:textColor="#3399FF" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ht_profile_fragment"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/ht_drugs_list"
+                android:id="@+id/ht_drugs_list"
+                android:padding="5dp"
+                android:gravity="center"
+                android:background="@drawable/help"
+                android:textColor="#3399FF" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ht_drugs_list_fragment"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/ht_stats"
+                android:id="@+id/ht_stats"
+                android:padding="5dp"
+                android:gravity="center"
+                android:background="@drawable/help"
+                android:textColor="#3399FF" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ht_stats_fragment"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/ht_compliance"
+                android:id="@+id/ht_compliance"
+                android:padding="5dp"
+                android:textColor="#3399FF"
+                android:gravity="center"
+                android:background="@drawable/help" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ht_compliance_fragment"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ht_email_fragment"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

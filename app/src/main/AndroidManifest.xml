@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.future.mymedicineapp" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/pills_blue"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.Light" >
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FirstActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".FirstActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.future.mymedicineapp.FirstActivity" />
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:icon="@mipmap/profile"
+            android:label="@string/title_activity_profile"
+            android:parentActivityName=".SettingsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.future.mymedicineapp.SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".HelpActivity"
+            android:icon="@mipmap/help"
+            android:label="@string/title_activity_help"
+            android:parentActivityName=".SettingsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.future.mymedicineapp.SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:icon="@mipmap/pills_blue"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".SettingsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.future.mymedicineapp.SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".PrivacyActivity"
+            android:icon="@mipmap/privacy"
+            android:label="@string/title_activity_privacy"
+            android:parentActivityName=".SettingsActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.future.mymedicineapp.SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".EditProfileActivity"
+            android:label="@string/title_activity_edit_profile"
+            android:parentActivityName=".ProfileActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.future.mymedicineapp.ProfileActivity" />
+        </activity>
+        <activity
+            android:name=".DrugsListActivity"
+            android:label="@string/title_activity_drugs_list"
+            android:parentActivityName=".FirstActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.future.mymedicineapp.FirstActivity" />
+        </activity>
+        <activity
+            android:name=".StatsActivity"
+            android:label="@string/title_activity_stats"
+            android:parentActivityName=".FirstActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.future.mymedicineapp.FirstActivity" />
+        </activity>
+    </application>
+
+</manifest>

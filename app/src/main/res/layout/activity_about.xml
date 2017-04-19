@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.future.mymedicineapp.AboutActivity"
+    android:backgroundTintMode="multiply"
+    android:background="#ffffffff">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/app_logo"
+        android:src="@drawable/pillsblue"
+        android:layout_above="@+id/app_name"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/app_name"
+        android:id="@+id/app_name"
+        android:gravity="center_horizontal"
+        android:textColor="#3399FF"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+        android:background="#ffffffff"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/copyright"
+        android:id="@+id/copyright"
+        android:layout_below="@+id/app_name"
+        android:layout_centerHorizontal="true"
+        android:textColor="#3399FF" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/all_rights"
+        android:id="@+id/all_rights"
+        android:layout_below="@+id/copyright"
+        android:layout_centerHorizontal="true"
+        android:textColor="#3399FF" />
+</RelativeLayout>

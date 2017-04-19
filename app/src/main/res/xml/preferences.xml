@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/profile" android:icon="@mipmap/profile">
+        <intent android:action="android.intent.action.VIEW"
+            android:targetClass="com.future.mymedicineapp.ProfileActivity"
+            android:targetPackage="com.future.mymedicineapp"/>
+    </Preference>
+    <Preference android:title="@string/help" android:icon="@mipmap/help">
+        <intent android:action="android.intent.action.VIEW"
+            android:targetClass="com.future.mymedicineapp.HelpActivity"
+            android:targetPackage="com.future.mymedicineapp"/>
+    </Preference>
+    <Preference android:title="@string/privacy" android:icon="@mipmap/privacy">
+        <intent android:action="android.intent.action.VIEW"
+            android:targetClass="com.future.mymedicineapp.PrivacyActivity"
+            android:targetPackage="com.future.mymedicineapp"/>
+    </Preference>
+    <Preference android:title="@string/about" android:icon="@mipmap/pills_blue">
+        <intent android:action="android.intent.action.VIEW"
+            android:targetClass="com.future.mymedicineapp.AboutActivity"
+            android:targetPackage="com.future.mymedicineapp"/>
+    </Preference>
+</PreferenceScreen>
